@@ -21,4 +21,6 @@ Om
 
 Den här sidan är byggd med ramverket Anax Flat som en del av kursen Teknisk webbdesign och användbarhet.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[Mitt Github kursrepo finner du här](https://github.com/gustavfors/designv2)
+
+[FIGURE src=img/theme/om.png caption="En vas med två blad i"]
