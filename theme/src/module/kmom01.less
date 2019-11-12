@@ -1,0 +1,293 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+// *,
+// *::before,
+// *::after {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// /* Hide submenu, leave this to kmom02 */
+// .rm-desktop ul {
+//     display: none;
+// }
+//
+// /* Hide responsive/mobile menu, leave this to kmom02 */
+// .rm-navbar-max {
+//     display: none;
+// }
+//
+// .region-header-col-3 {
+//     display: none;
+// }
+
+
+
+// @import url('https://fonts.googleapis.com/css?family=Lato:400|Lato:400');
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
+
+// html {font-size: 16px;}
+//
+// body {
+//   background-color: #f0f4f4;
+//   font-family: 'Lato', sans-serif;
+//   font-weight: 400;
+//   line-height: 1.6;
+//   color: #333;
+// }
+//
+// p {margin-bottom: 1.25rem; color: #6c757d; }
+//
+// h1, h2, h3, h4, h5 {
+//   margin-bottom: 1rem;
+//   font-family: 'Lato', sans-serif;
+//   font-family: Playfair Display;
+//   font-weight: 400;
+//   line-height: 1.2;
+// }
+//
+// h1 {
+//   margin-top: 0;
+//   font-size: 2.488rem;
+// }
+//
+// h2 {font-size: 2.074rem;}
+//
+// h3 {font-size: 1.728rem;}
+//
+// h4 {font-size: 1.44rem;}
+//
+// h5 {font-size: 1.2rem;}
+//
+// small, .text_small {font-size: 0.833rem;}
+//
+// img {
+//     width: 100%;
+// }
+
+.region-flash img {
+    width: 100%;
+}
+
+.wrap-all {
+    max-width: 1080px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap-all,
+.inner-wrap-main,
+.outer-wrap-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.inner-wrap-main {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.region-main {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+.region-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.outer-wrap-header {
+
+}
+
+.outer-wrap-flash {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid #fff;
+}
+
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+}
+
+.my-navbar li {
+    display: inline;
+}
+
+.my-navbar li a {
+    font-size: 12px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #111;
+}
+
+.my-navbar li:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text a {
+    font-size: 18px;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #111;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column-wrapper .column {
+    flex-basis: 30%;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #676767;
+}
+
+.footer-column-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.byline {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.byline img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.byline p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.sidebyside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebyside .col {
+    flex-basis: 45%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.figure {
+    margin: 2.5rem 0;
+}
+
+.inner-wrap-main .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.region-sidebar-left {
+    flex-basis: 20%;
+}
+
+.region-main.has-sidebar-left {
+    flex-basis: 70%;
+}
+
+.region-main.has-sidebar-left .article {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.region-sidebar-right {
+    flex-basis: 20%;
+}
+
+.region-main.has-sidebar-right {
+    flex-basis: 70%;
+}
+
+.region-main.has-sidebar-right .article {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.toc li {
+    list-style-type: none;
+}
+
+.toc li a {
+
+    color: #111;
+}
+
+.next-previous {
+    display: flex;
+}
+
+.previous a {
+    color: #111;
+}
+
+.next a {
+    color: #111;
+}
+
+.previous {
+    order: 1;
+}
+
+.next {
+    margin-left: auto;
+    order: 2;
+}
+
+.outer-wrap-breadcrumb {
+    margin-bottom: 3rem;
+}
+
+.outer-wrap-breadcrumb ul {
+    list-style-type: none;
+}
+
+.outer-wrap-breadcrumb a {
+    color: #111;
+}
+
+.breadcrumb-list ul {
+    display: flex;
+}
+
+.breadcrumb-list ul li:not(:last-child) {
+    margin-right: 0.5rem;
+}
