@@ -1,0 +1,82 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+ @ms: 4.5rem;
+ @ss: 2.5rem;
+
+.wrap-all {
+    max-width: 67.5rem;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outer-wrap-header {
+    padding-top: @ms;
+    padding-bottom: @ms;
+}
+
+.region-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.outer-wrap-flash {
+    // padding-top: @ms;
+    // padding-bottom: @ms;
+    // border-top: 2px solid #fff;
+    // border-bottom: 2px solid #fff;
+}
+
+.outer-wrap-main {
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: @ss;
+    padding-bottom: @ss;
+}
+
+.outer-wrap-footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-top: 2px solid #fff;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column-2 {
+    display: none;
+}
+
+.footer-column-3 {
+    text-align: right;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 2px solid #fff;
+}

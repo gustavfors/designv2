@@ -1,1 +1,3 @@
-Copyright år och ditt namn samt diverse länkar som du finner relevanta.
+Powered by Anax
+
+Copyright 2019 Gustav Fors.
