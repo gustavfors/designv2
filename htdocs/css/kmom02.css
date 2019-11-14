@@ -393,8 +393,24 @@ h1 {
   line-height: 1.4;
   font-family: 'Playfair Display', serif;
 }
+h3 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+}
+h4 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Playfair Display', serif;
+}
 p {
   font-weight: 300;
+}
+.section-header {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 img {
   width: 100%;
@@ -450,6 +466,17 @@ img {
 .footer-icon:not(:last-child) {
   margin-right: 0.5rem;
 }
+.section-header {
+  position: relative;
+}
+.section-header a {
+  position: relative;
+  color: #111 !important;
+  text-decoration: underline !important;
+}
+.rm-mobile {
+  background-color: #333 !important;
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -483,10 +510,22 @@ img {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.outer-wrap-breadcrumb,
 .outer-wrap-footer {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+.breadcrumb-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.breadcrumb-list ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+.breadcrumb-list ul li a {
+  color: #111;
 }
 .footer-column-wrapper {
   display: flex;
@@ -510,6 +549,43 @@ img {
   padding: 1rem 0;
   border-top: 2px solid #fff;
 }
+.toc {
+  list-style: none;
+  padding: 0;
+}
+.toc li {
+  margin-bottom: 0.125rem;
+}
+.toc li a {
+  color: #999;
+  text-decoration: none;
+}
+.selected a {
+  color: #111 !important;
+}
+.next-previous {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.inner-wrap-main .row {
+  display: flex;
+}
+.inner-wrap-main .row .region-sidebar-left {
+  margin-right: 4.5rem;
+  min-width: 10rem;
+}
+.inner-wrap-main .row .region-sidebar-right {
+  margin-left: 4.5rem;
+  min-width: 10rem;
+}
+.inner-wrap-main .row .region-sidebar-left h4 {
+  margin-top: 0;
+}
+.next a,
+.previous a {
+  color: #111;
+}
 /**
  * Layout for responsive style through media queries.
  */
@@ -525,6 +601,37 @@ img {
 @media (max-width: 991px) {
   .region-header-col-2 {
     display: none;
+  }
+  .inner-wrap-main .row {
+    flex-direction: column;
+  }
+  .inner-wrap-main .row > * {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .region-sidebar-left {
+    order: 2;
+  }
+  html {
+    font-size: 14px;
+  }
+  .inner-wrap-main .row .region-sidebar-right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 728px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .footer-column-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-column-3 p {
+    text-align: center;
   }
 }
 /**

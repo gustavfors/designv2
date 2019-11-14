@@ -17,4 +17,45 @@
     .region-header-col-2 {
         display: none;
     }
+
+    .inner-wrap-main .row {
+        flex-direction: column;
+    }
+
+    .inner-wrap-main .row > * {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .region-sidebar-left {
+        order: 2;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .inner-wrap-main .row .region-sidebar-right {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 728px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .footer-column-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column-3 p {
+        text-align: center;
+    }
 }

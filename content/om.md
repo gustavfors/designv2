@@ -15,6 +15,8 @@ views:
             meta:
                 type: single
                 route: block/om-redovisa
+
+
 ---
 Om
 =========================
@@ -23,4 +25,4 @@ Den här sidan är byggd med ramverket Anax Flat som en del av kursen Teknisk we
 
 [Mitt Github kursrepo finner du här](https://github.com/gustavfors/designv2)
 
-[FIGURE src=img/theme/om.png caption="En vas med två blad i"]
+![Bryggen, Bergen, Norway](img/theme/om.png)
