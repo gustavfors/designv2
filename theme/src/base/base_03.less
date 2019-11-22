@@ -89,8 +89,12 @@ a {
     display: inline;
 }
 
-.breadcrumb-list > ul > li:not(:last-child) {
-    margin-right: 1rem;
+// .breadcrumb-list > ul > li:not(:last-child) {
+//     margin-right: 1rem;
+// }
+
+.outer-wrap-breadcrumb li:not(:last-child)::after {
+    content: " >> ";
 }
 
 p {
