@@ -50,6 +50,11 @@ return [
             "title" => "Test sida",
         ],
         [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport sida",
+        ],
+        [
             "text" => "Styleväljare",
             "url" => "style",
             "title" => "Välj stylesheet.",

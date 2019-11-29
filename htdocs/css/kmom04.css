@@ -379,6 +379,10 @@ body {
   background-color: #f0f4f4;
   overflow-x: hidden;
 }
+.route- h1,
+.route-om h1 {
+  border-bottom: none;
+}
 h1,
 h2,
 h3,

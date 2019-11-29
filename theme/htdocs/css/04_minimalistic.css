@@ -376,8 +376,12 @@ template {
 }
 body {
   font: 16px/1.5 "Source Sans Pro";
-  background-color: #f0f4f4;
+  background-color: #fff;
   overflow-x: hidden;
+}
+.route- h1,
+.route-om h1 {
+  border-bottom: none;
 }
 h1,
 h2,
@@ -665,7 +669,7 @@ hr::after {
 }
 img {
   width: 100%;
-  border: 4px solid #fff;
+  border: none;
   border-radius: 3px;
 }
 .site-logo,
@@ -724,7 +728,7 @@ li::after,
 tr,
 legend,
 .flashmessage-icon {
-  color: inherit;
+  color: #111;
 }
 .next-previous {
   display: flex;
@@ -746,13 +750,13 @@ h5 {
   color: #111;
 }
 p {
-  color: #666;
+  color: #333;
 }
 .toc > li a {
-  color: #999 !important;
+  color: #333 !important;
 }
 .toc > .selected a {
-  color: #000000 !important;
+  color: #111 !important;
 }
 .rm-button {
   line-height: 1;
@@ -1144,7 +1148,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-align: right;
 }
 .rm-desktop > li > ul > li {
-  background-color: #f0f4f4;
+  background-color: #fff;
   text-align: center;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -1219,8 +1223,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 8.85416667%;
 }
 .footer-column-wrapper {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items: center;

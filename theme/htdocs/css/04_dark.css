@@ -376,8 +376,12 @@ template {
 }
 body {
   font: 16px/1.5 "Source Sans Pro";
-  background-color: #333;
+  background-color: #1a1a1a;
   overflow-x: hidden;
+}
+.route- h1,
+.route-om h1 {
+  border-bottom: none;
 }
 h1,
 h2,
@@ -665,7 +669,7 @@ hr::after {
 }
 img {
   width: 100%;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   border-radius: 3px;
 }
 .site-logo,
@@ -684,7 +688,7 @@ img {
 }
 .fab {
   box-sizing: border-box;
-  background: #fff;
+  background: #EEEEEE;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -693,12 +697,12 @@ img {
   padding: 3px;
   font-size: 11px;
   transition: all 0.5s;
-  color: #111;
+  color: #000000;
 }
 .site-logo-text a {
   font-size: 1.25em;
   text-decoration: none;
-  color: #fff;
+  color: #EEEEEE;
   text-transform: capitalize;
   font-family: 'Playfair Display';
   letter-spacing: 1px;
@@ -724,7 +728,7 @@ li::after,
 tr,
 legend,
 .flashmessage-icon {
-  color: #fff;
+  color: #EEEEEE;
 }
 .next-previous {
   display: flex;
@@ -743,16 +747,16 @@ h2,
 h3,
 h4,
 h5 {
-  color: #fff;
+  color: #EEEEEE;
 }
 p {
-  color: #c9c9c9;
+  color: #CCCCCC;
 }
 .toc > li a {
-  color: #c9c9c9 !important;
+  color: #CCCCCC !important;
 }
 .toc > .selected a {
-  color: #fff !important;
+  color: #EEEEEE !important;
 }
 .rm-button {
   line-height: 1;
@@ -763,11 +767,11 @@ p {
   text-decoration: none;
   letter-spacing: 2px;
   font-family: 'Playfair Display';
-  color: #fff !important;
+  color: #EEEEEE !important;
 }
 code {
-  background-color: #fff;
-  color: #111;
+  background-color: #000;
+  color: #fff;
 }
 /**
  * Fluid and Responsive Vertical Grid
@@ -1144,7 +1148,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-align: right;
 }
 .rm-desktop > li > ul > li {
-  background-color: #333;
+  background-color: #000000;
   text-align: center;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -1219,8 +1223,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 8.85416667%;
 }
 .footer-column-wrapper {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items: center;
