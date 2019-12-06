@@ -13,7 +13,13 @@ För uppgiften har tre kommuners webbplatser valts att undersökas. Urvalet är 
 Metod
 -----------------------
 
-För att utföra undersökningen användes främst två verktyg. Googles analyseringsverktyg Page Insight[^4] för att ge en överblick av hur de olika webbsidorna presterade på mobila enheter såväl som desktop enheter, verktyget gav även förbättringsförslag för hur prestandan kunde förbättras. Även Google dev tools[^5] användes för att mäta sidans laddningshastighet, sidans storlek samt hur många resurser som laddades in. För att presentera och sammanställa resultatet användes verktyget Google sheets.
+För att utföra undersökningen användes främst två verktyg. Googles analyseringsverktyg Page Insight[^4] för att ge en överblick av hur de olika webbsidorna presterade på mobila enheter såväl som desktop enheter, verktyget gav även förbättringsförslag för hur prestandan kunde förbättras. Även Google dev tools[^5] användes för att mäta sidans laddningshastighet, sidans storlek samt hur många resurser som laddades in.
+
+För att extrahera datan från devtools användes nätverks fliken där antalet resurser = requests, sidans storlek = transferred och laddningshastighet = finished.
+
+En av sidorna som undersöktes nådde aldrig status finished då det fanns något typ av script i bakgrunden som kontinuerligt la till extra data som behövde laddas ner. Därav gjordes ett beslut att finished skulle räknas som den tid det tog att ladda ner alla filer förutom den kontinuerliga extra datan.
+
+För att presentera och sammanställa resultatet användes verktyget Google sheets.
 
 Resultat
 -----------------------
@@ -178,15 +184,15 @@ Webbplatsen kan förbättras genom att skjuta upp inläsning av bilder som inte 
 Analys
 -----------------------
 
-Samtliga webbsidor som undersöktes presterade bra i desktop testet och relativt dåligt i mobil testet enligt page insight. Detta är något som bör åtgärdas då det redan nu är fler som besöker webbplatser via mobilen än desktopen och trenden fortsätter att öka. Enligt statisk från Statista.com[^6] stod mobiler för över 50% av webtraffiken år 2017 och år 2018 var siffran 52.2%.
+Laddningstiderna skilde mycket mellan sidorna. Det kunde urskiljas ett samband mellan sidornas storlek och laddningstid. De större webbplatserna med fler resurser hade en längre laddningstid än de mindre. Detta visar att det är viktigt för webbplatser att se över sin resursanvändning om de vill uppnå snabbare laddningstider.
 
-En anledning till varför vi tror att webbplatserna presterar så dåligt i mobil testerna kan vara för att kan ha utvecklats för ett antal år sedan. Då den mobil trenden är relativt ny kan det helt enkelt vara så att de inte var värt att designa utifrån dessa enheter när webbplatserna sattes i bruk och inga stora uppdatering skett sedan dess.
+Samtliga webbsidor som undersöktes presterade bra i desktop testet och relativt dåligt i mobil testet enligt Page insight. Detta är något som bör åtgärdas då det redan nu är fler som besöker webbplatser via mobilen än desktopen och trenden fortsätter att öka. Enligt statisk från Statista.com[^6] stod mobiler för över 50% av webbtrafiken år 2017 och år 2018 var siffran 52.2%.
 
-Baserat på resultatet rangordnas Luleå kommun som etta, då sidan presterat bäst i alla de utförda testerna. Tvåa kommer Karlskrona kommun och slutligen Helsingborgs kommun.
-Laddningstiderna skilde mycket, där de större webbplatserna med fler resurser hade en längre laddningstid än de mindre. Detta är förväntat då mängden data som användaren behöver hämta hem är större.  
+En anledning till varför vi tror att webbplatserna presterar så dåligt i mobil testerna kan vara för att kan ha utvecklats för ett antal år sedan. Eftersom mobil trenden är relativt ny kan det helt enkelt vara så att det inte var värt att designa utifrån dessa enheter när webbplatserna sattes i bruk och inga större uppdatering skett sedan dess.
 
-Det mest vanligt förekommande förbättrings åtgärderna för webbplatserna verkar relatera till bildhantering och CSS. De åtgärder som kan vidtas är användning av så kallad lazy loading där inläsningen av bilder som inte visas på skärmen skjuts upp, bildkomprimering, användning av modernare filformat för bilder exempelvis PEG 2000, JPEG XR och WebP över PNG och JPEG samt borttagning av oanvänd CSS kod.
+Vi har valt att rangordna webbplatserna efter deras resultat i de utförda testerna. Därav rankas Luleå kommun som etta, då sidan presterade bäst i alla de utförda testerna. Tvåa kommer Karlskrona kommun och slutligen Helsingborg kommun.
 
+Det mest vanligt förekommande förbättrings åtgärderna för webbplatserna verkar relatera till bildhantering och CSS. De åtgärder som kan vidtas är användning av så kallad lazy loading där inläsningen av bilder som inte visas på skärmen skjuts upp, bildkomprimering, användning av modernare filformat för bilder samt borttagning av oanvänd CSS/JS kod.
 
 Vi uppfattar personligen att gränsen för om en sida är snabb alternativt långsam går vid två sekunder. Utifrån denna parametern är det endast Luleå kommun av de undersökta sidorna som klassas som snabb.
 

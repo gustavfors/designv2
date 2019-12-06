@@ -1,8 +1,7 @@
 ---
-author: mos
+author: gufo
 category:
-    - utbildning
-    - kursnyheter
+    - bild
 published: "2019-12-05"
 ---
 Strand altan
