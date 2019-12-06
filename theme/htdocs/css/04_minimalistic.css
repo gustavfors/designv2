@@ -383,6 +383,9 @@ body {
 .route-om h1 {
   border-bottom: none;
 }
+.route- .outer-wrap-flash-message {
+  display: none;
+}
 h1,
 h2,
 h3,
