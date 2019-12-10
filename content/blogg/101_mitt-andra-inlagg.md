@@ -4,7 +4,7 @@ category:
     - bild
 published: "2019-12-05"
 ---
-Strand altan
+Strandaltan
 ==================================
 
 [FIGURE caption="Bild 1000 x 800" src="image/blogg/blog4.jpg?width=1000&height=800&crop-to-fit]

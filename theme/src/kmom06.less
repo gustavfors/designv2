@@ -1,0 +1,78 @@
+/*!
+ *Theme for kmom05.
+ *
+ * This stylesheet is for the design course and kmom05.
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+ /**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/base_06.less";
+
+
+
+@import "@desinax/vertical-grid/less/grid.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@import "module/variables.less";
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+@import "layout/layout_06.less";
+@import "layout/responsive_06.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+ // .rm-max.rm-navbar {
+ //     position: relative;
+ //     top: 0;
+ //     right: 0;
+ // }
