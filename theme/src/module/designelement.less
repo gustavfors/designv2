@@ -1,0 +1,38 @@
+@bodyColor: #fff;
+@footerBorder: 2px solid #cecece;
+
+body {
+    background: linear-gradient(0deg,rgba(240,244,244,0.1),rgba(240,244,244,0.1)), url("../img/texture.png");
+}
+
+.wrap-all {
+    border: 2px solid #cecece;
+    max-width: 1240px;
+    margin: 0 auto;
+    // padding: 48px 96px 72px 96px;
+    background: #fff;
+}
+
+@media (min-width: 1280px) {
+    .wrap-all {
+        margin: 96px auto;
+        padding: 48px 96px 72px 96px;
+    }
+}
+
+img {
+    border: none;
+}
+
+.region-header-col-2 {
+    margin-top: 24px;
+}
+
+.site-logo-text a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: @siteLogoColor;
+    text-transform: lowercase;
+    font-family: 'Playfair Display';
+    letter-spacing: 2px;
+}

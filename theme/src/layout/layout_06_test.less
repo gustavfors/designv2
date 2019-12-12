@@ -1,0 +1,154 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+.inner-wrap {
+ #desinax-vgrid.grid(1100px);
+}
+
+.inner-wrap-main {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.row {
+    #desinax-vgrid.row();
+}
+
+.region-header {
+    #desinax-vgrid.column(@columns);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+// .region-header-col-1 {
+//     #desinax-vgrid.column(6);
+// }
+// .region-header-col-2,
+// .region-header-col-3 {
+//     #desinax-vgrid.column(18);
+// }
+//
+.rm-desktop {
+    text-align: center;
+    position: relative;
+}
+
+.rm-desktop::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 10%;
+    border-bottom: 2px solid #cecece;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.rm-desktop::before {
+    content: "";
+    display: block;
+    clear: both;
+    width: 10%;
+    border-bottom: 2px solid #cecece;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+@media (min-width: 1140px) {
+    .rm-desktop::before {
+        width: 15%;
+    }
+    .rm-desktop::after {
+        width: 15%;
+    }
+}
+
+.rm-desktop > li > ul > li {
+    background-color: @dropDownColor;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid @desktopMenuBorderColor;
+}
+
+.rm-desktop > li:not(:last-child) {
+    margin-right: 1.45rem;
+}
+
+.rm-desktop > li a {
+    padding: 0;
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(20);
+    #desinax-vgrid.push(2);
+}
+
+.region-main {
+    #desinax-vgrid.column(20);
+    #desinax-vgrid.push(2);
+
+    &.has-sidebar-left {
+        #desinax-vgrid.column(13);
+        #desinax-vgrid.push(1);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(14);
+        #desinax-vgrid.push(2);
+    }
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.push(2);
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.push(1);
+}
+
+.region-footer {
+    #desinax-vgrid.column(20);
+    #desinax-vgrid.push(2);
+}
+
+.footer-column-wrapper {
+    // border-top: 2px solid #fff;
+    // border-bottom: 2px solid #fff;
+    border-top: @footerBorder;
+    border-bottom: @footerBorder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column:last-child {
+    display: none;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Show the grid
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+}
+
+.hgrid .inner-wrap {
+    @gridImage: "../img/theme/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
