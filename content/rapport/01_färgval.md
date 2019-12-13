@@ -1,6 +1,6 @@
 ---
 ---
-Webbplatsers färgval och känsla
+Färgval och känsla
 =======================
 
 Uppgiftens syfte är att utvärdera hur färger kan påverka en webbplats utseende samt vilka känslor och intryck sidan förmedlar. Även webbplatsernas val av typsnitt kommer att tas i beaktning vid utvärdering av sidans visuella utseende. För att uppnå syftet kommer tre verkliga webbplatser att studeras och analyseras.

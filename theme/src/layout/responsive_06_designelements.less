@@ -1,0 +1,54 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media (min-width: 991px) {
+    .region-header-col-3 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .region-header {
+        #desinax-vgrid.column(22);
+        #desinax-vgrid.push(1);
+        display: flex;
+    }
+
+    .region-flash {
+        #desinax-vgrid.column(22);
+        #desinax-vgrid.push(1);
+    }
+}
+
+@media (max-width: 991px) {
+    .region-header-col-2 {
+        display: none !important;
+    }
+
+    .region-main {
+        #desinax-vgrid.column(20);
+        #desinax-vgrid.push(2);
+
+        &.has-sidebar-left {
+            #desinax-vgrid.column(20);
+            #desinax-vgrid.push(2);
+        }
+
+        &.has-sidebar-right {
+            #desinax-vgrid.column(20);
+            #desinax-vgrid.push(2);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(20);
+        #desinax-vgrid.push(2);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(20);
+        #desinax-vgrid.push(2);
+    }
+
+}
