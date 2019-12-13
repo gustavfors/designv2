@@ -1216,6 +1216,7 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
 }
 @media (min-width: 1280px) {
   .wrap-all {
@@ -1438,6 +1439,14 @@ img {
 @media (max-width: 991px) {
   .region-header-col-2 {
     display: none !important;
+  }
+  .region-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-logo-text a {
+    font-size: 1.25rem;
   }
   .region-main {
     display: inline;

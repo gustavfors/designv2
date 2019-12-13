@@ -10,9 +10,9 @@ views:
                 route: block/byline
 ---
 
-# Mitt namn är Gustav Fors, jag är en nybliven student på BTH i Karlskrona, där studerar jag för att bli webbutvecklare.
+# Mitt namn är Gustav Fors, jag är en nybliven student på BTH i Karlskrona, där studerar jag för att bli en webbutvecklare.
 
-Jag är född och uppvuxen i Luleå, gick på teknikprogrammet på gymnasiet där jag först fick prova på webbdesign och programmering. Dessa klickade inte riktigt för mig just då, så efter gymnasiet jag valde jag att börja jobba istället för att plugga vidare.
+Jag är född och uppvuxen i Luleå, gick på teknikprogrammet på gymnasiet där jag först fick prova på webbdesign och programmering. Dessa klickade inte för mig just då, så efter gymnasiet jag valde jag att börja jobba istället för att plugga vidare.
 
 ![Bryggen, Bergen, Norway](img/theme/index.png)
 
